@@ -7,8 +7,7 @@ import NotFound from "./components/NotFound";
 import PhotosList from "./components/PhotosList";
 import SearchForm from "./components/SearchForm";
 
-const apiKey = "asdfasdfasd";
-// const apiSecret = "lakjsdfadslfj";
+const apiKey = process.env.REACT_APP_FLICKR_API_KEY;
 
 export default class App extends Component {
   constructor() {
