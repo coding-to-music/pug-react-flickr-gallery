@@ -1,8 +1,8 @@
-# pug-react-gallery-portfolio
+# pug-react-flickr-gallery
 
-https://pug-react-gallery-portfolio.herokuapp.com
+https://pug-react-flickr-gallery.herokuapp.com
 
-https://github.com/coding-to-music/pug-react-gallery-portfolio
+https://github.com/coding-to-music/pug-react-flickr-gallery
 
 Treehouse Project 7 - React Image Gallery App
 
@@ -27,7 +27,7 @@ export const keys = {
 };
 ```
 
-# pug-react-gallery-portfolio
+# pug-react-flickr-gallery
 
 <div id="top"></div>
 
@@ -37,23 +37,23 @@ export const keys = {
   <a href="https://github.com/davidcastillog/travelfy-server">
     <img src="https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/travelfy-logo-blue.jpg" alt="travelfy Logo" width="250" height="75" alt="Travelfy">
   </a>
-  <h3 align="center">Travel planner</h3>
-     MERN stack app
+  <h3 align="center">pug-react-flickr-gallery</h3>
+     Pug React Axios stack app
     <br />
-   <a href="https://pug-react-gallery-portfolio.herokuapp.com">View Demo</a>
+   <a href="https://pug-react-flickr-gallery.herokuapp.com">View Demo</a>
 </div>
 
-# pug-react-gallery-portfolio
+# pug-react-flickr-gallery
 
-https://github.com/coding-to-music/pug-react-gallery-portfolio
+https://github.com/coding-to-music/pug-react-flickr-gallery
 
-https://pug-react-gallery-portfolio.herokuapp.com/
+https://pug-react-flickr-gallery.herokuapp.com/
 
 ```java
 cors({
   credentials: true,
   origin: [
-    "https://pug-react-gallery-portfolio.herokuapp.com",  # Heroku Production
+    "https://pug-react-flickr-gallery.herokuapp.com",  # Heroku Production
     "https://still-sands-27981.herokuapp.com",              # test
     "https://guarded-dusk-08830.herokuapp.com",             # staging
     "https://radiant-gorge-70504.herokuapp.com",            # development
@@ -203,13 +203,13 @@ You may also see any lint errors in the console.
 ### GitHub
 
 ```java
- git init
- git add .
- git remote remove origin
- git commit -m "first commit"
- git branch -M main
- git remote add origin git@github.com:coding-to-music/pug-react-gallery-portfolio.git
- git push -u origin main
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/pug-react-flickr-gallery.git
+git push -u origin main
 ```
 
 ## Need to set CORS in server/config/index.js
@@ -220,7 +220,7 @@ You may also see any lint errors in the console.
     cors({
       credentials: true,
       origin: [
-        "https://pug-react-gallery-portfolio.herokuapp.com",  # Heroku Production
+        "https://pug-react-flickr-gallery.herokuapp.com",  # Heroku Production
         "https://still-sands-27981.herokuapp.com",              # test
         "https://guarded-dusk-08830.herokuapp.com",             # staging
         "https://radiant-gorge-70504.herokuapp.com",            # development
@@ -247,7 +247,7 @@ You may also see any lint errors in the console.
 ### Heroku
 
 ```java
-heroku create pug-react-gallery-portfolio
+heroku create pug-react-flickr-gallery
 ```
 
 ```java
@@ -271,7 +271,7 @@ https://still-sands-27981.herokuapp.com/ | https://git.heroku.com/still-sands-27
 ### Heroku MongoDB Environment Variables
 
 ```java
-heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-gallery-portfolio?retryWrites=true&w=majority"
+heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-flickr-gallery?retryWrites=true&w=majority"
 git push heroku
 ```
 
@@ -353,7 +353,7 @@ main scripts
 
 ```java
 {
-  "name": "pug-react-gallery-portfolio-server",
+  "name": "pug-react-flickr-gallery-server",
   "version": "1.0.0",
   "description": "MongoDB Dev MERN Stack",
   "main": "index.js",
@@ -414,7 +414,7 @@ heroku logs --tail --remote staging
 # Heroku remotes in repo:
 
 ```java
-pug-react-gallery-portfolio (heroku)
+pug-react-flickr-gallery (heroku)
 guarded-dusk-08830 (staging)
 still-sands-27981 (test)
 ```
@@ -458,14 +458,14 @@ git add .
 git remote remove origin
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:coding-to-music/pug-react-gallery-portfolio.git
+git remote add origin git@github.com:coding-to-music/pug-react-flickr-gallery.git
 git push -u origin main
 ```
 
 ### Heroku
 
 ```java
-heroku create pug-react-gallery-portfolio
+heroku create pug-react-flickr-gallery
 
 heroku run npx browserslist@latest --update-db
 ```
@@ -473,19 +473,19 @@ heroku run npx browserslist@latest --update-db
 ### .env MongoDB Environment Variables
 
 ```java
-ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-gallery-portfolio?retryWrites=true&w=majority"
+ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-flickr-gallery?retryWrites=true&w=majority"
 ```
 
 ### Heroku MongoDB Environment Variables
 
 ```java
-heroku config:set ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-gallery-portfolio?retryWrites=true&w=majority"
+heroku config:set ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-flickr-gallery?retryWrites=true&w=majority"
 ```
 
 Set all the environment variables on Heroku
 
 ```java
-heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-gallery-portfolio?retryWrites=true&w=majority"
+heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/pug-react-flickr-gallery?retryWrites=true&w=majority"
 
 git push heroku
 ```
@@ -517,7 +517,7 @@ heroku buildpacks:add mars/create-react-app
 Output:
 
 ```java
-Buildpack added. Next release on pug-react-gallery-portfolio will use:
+Buildpack added. Next release on pug-react-flickr-gallery will use:
   1. heroku/nodejs
   2. mars/create-react-app
 Run git push heroku main to create a new release using these buildpacks.
@@ -538,7 +538,7 @@ heroku buildpacks
 Output:
 
 ```java
-=== pug-react-gallery-portfolio Buildpack URLs
+=== pug-react-flickr-gallery Buildpack URLs
 1. mars/create-react-app
 2. heroku/nodejs
 ```
