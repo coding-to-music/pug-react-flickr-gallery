@@ -412,6 +412,12 @@ heroku logs --tail --remote staging
 
 ## Specify the app you want with --app or --remote.
 
+heroku apps
+
+```java
+list of apps
+```
+
 # Heroku remotes in repo:
 
 ```java
@@ -433,10 +439,28 @@ origin  git@github.com:coding-to-music/pug-react-flickr-gallery.git (push)
 
 ## next steps
 
-Change the git remote for heroku FROM `react-gallery-portfolio`
-push to the heroku remote TO `pug-react-flickr-gallery`
+- Change the git remote for heroku FROM `react-gallery-portfolio`
+- push to the heroku remote TO `pug-react-flickr-gallery`
 
-redeploy the heroku app
+- redeploy the heroku app
+
+### change remote
+
+```java
+git remote remove heroku
+git remote add heroku https://git.heroku.com/pug-react-flickr-gallery.git
+```
+
+### Verify is correct:
+
+git remote -v
+
+```java
+heroku  https://git.heroku.com/pug-react-flickr-gallery.git (fetch)
+heroku  https://git.heroku.com/pug-react-flickr-gallery.git (push)
+origin  git@github.com:coding-to-music/pug-react-flickr-gallery.git (fetch)
+origin  git@github.com:coding-to-music/pug-react-flickr-gallery.git (push)
+```
 
 ## PRODUCTION
 
