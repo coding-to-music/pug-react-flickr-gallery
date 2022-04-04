@@ -1,5 +1,5 @@
 {
-  "name": "react-gallery-app",
+  "name": "pug-react-gallery-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,11 +15,25 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku",
+    "deploy:staging": "git push staging main",
+    "deploy:test": "git push test main",
+    "deploy:development": "git push development main && heroku logs --tail --remote development",
+    "install:client": "cd client && npm install --production=false",
+    "build:client": "cd client && npm run build",
+    "install:server": "npm install --production=false",
+    "install:server:client": "concurrently \"npm install --production=false\" \"npm install:client\"  \"npm install:server\"",
+    "start:client": "cd client && npm run start",
+    "start:server": "npm run start",
+    "start:all": "concurrently \"npm run start:client\" \"npm run start:server\""
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ]
 }
