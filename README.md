@@ -25,6 +25,7 @@ export const keys = {
   apiKey: '[KEY]',
   apiSecret: '[SECRET]'
 };
+
 ```
 
 # pug-react-flickr-gallery
