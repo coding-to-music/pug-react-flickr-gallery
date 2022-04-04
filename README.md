@@ -420,6 +420,24 @@ guarded-dusk-08830 (staging)
 still-sands-27981 (test)
 ```
 
+## git remote -v
+
+git remote -v
+
+```java
+heroku  https://git.heroku.com/react-gallery-portfolio.git (fetch)
+heroku  https://git.heroku.com/react-gallery-portfolio.git (push)
+origin  git@github.com:coding-to-music/pug-react-flickr-gallery.git (fetch)
+origin  git@github.com:coding-to-music/pug-react-flickr-gallery.git (push)
+```
+
+## next steps
+
+Change the git remote for heroku FROM `react-gallery-portfolio`
+push to the heroku remote TO `pug-react-flickr-gallery`
+
+redeploy the heroku app
+
 ## PRODUCTION
 
 ```java
