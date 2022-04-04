@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "git add . && git commit -m Heroku && git push && git push heroku",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
     "deploy:staging": "git push staging main",
     "deploy:test": "git push test main",
     "deploy:development": "git push development main && heroku logs --tail --remote development",
