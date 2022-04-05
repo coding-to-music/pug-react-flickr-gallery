@@ -87,7 +87,13 @@ const dateTimeStamp = preval`module.exports = new Date().toLocaleString();`
 ```
 
 ```java
-const AppEnvironment = process.env("ENVIRONMENT");
+const AppEnvironment = process.env.ENVIRONMENT || "unknown";
+```
+
+Set the environment variable ENVIRONMENT to one of the following:
+
+```java
+heroku config:set ENVIRONMENT="production"
 ```
 
 Here's a full example:
@@ -105,7 +111,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
+          <p>
             Build Date: {preval`module.exports = new Date().toLocaleString();`}.
+          </p>
+          <p>AppEnvironment: {AppEnvironment}</p>
           </p>
         </header>
       </div>

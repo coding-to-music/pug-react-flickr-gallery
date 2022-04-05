@@ -53,8 +53,8 @@ export default class App extends Component {
         <div className="container">
           <p>
             Build Date: {preval`module.exports = new Date().toLocaleString();`}.
-            AppEnvironment: {AppEnvironment}
           </p>
+          <p>AppEnvironment: {AppEnvironment}</p>
           <SearchForm onSearch={this.searchPhotos} />
 
           <nav className="main-nav">
