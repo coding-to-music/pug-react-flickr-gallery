@@ -87,13 +87,13 @@ const dateTimeStamp = preval`module.exports = new Date().toLocaleString();`
 ```
 
 ```java
-const AppEnvironment = process.env.ENVIRONMENT || "unknown";
+const AppEnvironment = process.env.REACT_APP_ENVIRONMENT || "unknown";
 ```
 
 Set the environment variable ENVIRONMENT to one of the following:
 
 ```java
-heroku config:set ENVIRONMENT="production"
+heroku config:set REACT_APP_ENVIRONMENT="production"
 ```
 
 Here's a full example:
