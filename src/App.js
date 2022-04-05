@@ -13,6 +13,8 @@ const AppEnvironment = process.env.REACT_APP_ENVIRONMENT || "unknown";
 
 console.log(`App.js: AppEnvironment: ${AppEnvironment}`);
 
+import generatedGitInfo from "./generatedGitInfo.json";
+
 export default class App extends Component {
   constructor() {
     super();
@@ -57,6 +59,16 @@ export default class App extends Component {
             Build Date: {preval`module.exports = new Date().toLocaleString();`}.
           </p>
           <p>AppEnvironment: {AppEnvironment}</p>
+          <div className="git-info">
+            <p>
+              <strong>Git Branch:</strong>{" "}
+              <code>{generatedGitInfo.gitBranch}</code>
+            </p>
+            <p>
+              <strong>Git Commit Hash:</strong>{" "}
+              <code>{generatedGitInfo.gitCommitHash}</code>
+            </p>
+          </div>
           <SearchForm onSearch={this.searchPhotos} />
 
           <nav className="main-nav">

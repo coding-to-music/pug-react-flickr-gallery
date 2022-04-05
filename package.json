@@ -20,11 +20,12 @@
     "node": "16.x"
   },
   "scripts": {
+    "git-info": "node src/gitInfo.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run git-info && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
+    "deploy": "npm run git-info && git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
     "deploy:staging": "git push staging main",
     "deploy:test": "git push test main",
     "deploy:development": "git push development main && heroku logs --tail --remote development",
