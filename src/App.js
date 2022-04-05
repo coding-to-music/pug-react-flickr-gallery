@@ -6,6 +6,7 @@ import axios from "axios";
 import NotFound from "./components/NotFound";
 import PhotosList from "./components/PhotosList";
 import SearchForm from "./components/SearchForm";
+import preval from "preval.macro";
 
 const apiKey = process.env.REACT_APP_FLICKR_API_KEY;
 
@@ -49,6 +50,9 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
+          <p>
+            Build Date: {preval`module.exports = new Date().toLocaleString();`}.
+          </p>
           <SearchForm onSearch={this.searchPhotos} />
 
           <nav className="main-nav">
