@@ -9,7 +9,7 @@ import SearchForm from "./components/SearchForm";
 import preval from "preval.macro";
 
 const apiKey = process.env.REACT_APP_FLICKR_API_KEY;
-const AppEnvironment = process.env("ENVIRONMENT") || "unknown";
+const AppEnvironment = process.env.ENVIRONMENT || "unknown";
 
 export default class App extends Component {
   constructor() {
