@@ -9,6 +9,7 @@ import SearchForm from "./components/SearchForm";
 import preval from "preval.macro";
 
 const apiKey = process.env.REACT_APP_FLICKR_API_KEY;
+const AppEnvironment = process.env("ENVIRONMENT") || "unknown";
 
 export default class App extends Component {
   constructor() {
@@ -52,6 +53,7 @@ export default class App extends Component {
         <div className="container">
           <p>
             Build Date: {preval`module.exports = new Date().toLocaleString();`}.
+            AppEnvironment: {AppEnvironment}
           </p>
           <SearchForm onSearch={this.searchPhotos} />
 

@@ -61,6 +61,61 @@ cors({
     "http://localhost:3000",
 ```
 
+## Display Build Date and Environment
+
+https://stackoverflow.com/questions/53028778/how-to-show-build-datetime-on-my-react-web-app-using-create-react-app
+
+Starting in Create React App 2 (react-scripts@^2.0) you can accomplish this via macros.
+
+First, install preval.macro:
+
+```java
+$ npm install --save preval.macro # if using npm
+$ yarn add preval.macro # if using yarn
+```
+
+Next, in the file you want to render a build timestamp in, include preval.macro:
+
+```java
+import preval from 'preval.macro'
+```
+
+Finally, you can create a constant and use it in your app like so:
+
+```java
+const dateTimeStamp = preval`module.exports = new Date().toLocaleString();`
+```
+
+```java
+const AppEnvironment = process.env("ENVIRONMENT");
+```
+
+Here's a full example:
+
+```java
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import preval from 'preval.macro'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Build Date: {preval`module.exports = new Date().toLocaleString();`}.
+          </p>
+        </header>
+      </div>
+    )
+  }
+}
+
+export default App
+```
+
 <!-- TABLE OF CONTENTS -->
   <summary>Table of Contents</summary>
   <ol>
