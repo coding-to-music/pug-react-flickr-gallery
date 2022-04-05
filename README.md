@@ -35,9 +35,9 @@ export const keys = {
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/davidcastillog/travelfy-server">
+  <!-- <a href="https://github.com/davidcastillog/travelfy-server">
     <img src="https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/travelfy-logo-blue.jpg" alt="travelfy Logo" width="250" height="75" alt="Travelfy">
-  </a>
+  </a> -->
   <h3 align="center">pug-react-flickr-gallery</h3>
      Pug React Axios stack app
     <br />
@@ -269,7 +269,7 @@ export default App;
 - [x] Display Enviroment in console
 - [✅] Checkmarks Working
 - [ ] User error in console
-- [ ] Display Build and Environment info in the UI
+- [✅] Display Build and Environment info in the UI
 - [ ] Get Login to work
 - [ ] Logging
 - [ ] Auth with GitHub and Google
@@ -369,13 +369,6 @@ You may also see any lint errors in the console.
 <!-- USAGE EXAMPLES -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/davidcastillog
-[product-screenshot]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/home.jpg
-[product-screenshot2]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/explore.jpg
-[product-screenshot3]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/mytrips.jpg
-[product-screenshot4]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/weather.jpg
 
 ## Installation:
 
