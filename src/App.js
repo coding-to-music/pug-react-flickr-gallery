@@ -7,13 +7,12 @@ import NotFound from "./components/NotFound";
 import PhotosList from "./components/PhotosList";
 import SearchForm from "./components/SearchForm";
 import preval from "preval.macro";
+import generatedGitInfo from "./generatedGitInfo.json";
 
 const apiKey = process.env.REACT_APP_FLICKR_API_KEY;
 const AppEnvironment = process.env.REACT_APP_ENVIRONMENT || "unknown";
 
 console.log(`App.js: AppEnvironment: ${AppEnvironment}`);
-
-import generatedGitInfo from "./generatedGitInfo.json";
 
 export default class App extends Component {
   constructor() {
