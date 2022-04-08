@@ -8,7 +8,9 @@ Treehouse Project 7 - React Image Gallery App
 
 By JEN GERMANN germanny https://github.com/germanny/react-gallery-app
 
-https://jengermann-portfolio.herokuapp.com
+No live version of this project.
+
+https://static-pug-node-express.herokuapp.com/projects/7
 
 https://github.com/germanny/react-gallery-app
 
